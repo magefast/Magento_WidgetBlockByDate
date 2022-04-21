@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ @author magefast@gmail.com www.magefast.com
+  -->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="cms_static_block_date" class="Dragonfly\WidgetBlockByDate\Block\Widget\CmsBlockDate"
+            placeholder_image="Magento_Cms::images/widget_block.png">
+        <label translate="true">CMS Static Block by Date range</label>
+        <description translate="true">Contents of a Static Block</description>
+        <parameters>
+            <parameter name="display_from" xsi:type="block" required="true" visible="true" sort_order="20">
+                <label translate="true">Display from</label>
+                <block class="Dragonfly\WidgetBlockByDate\Block\Widget\Type\DatePicker">
+                </block>
+            </parameter>
+            <parameter name="display_to" xsi:type="block" required="true" visible="true" sort_order="30">
+                <label translate="true">Display to</label>
+                <block class="Dragonfly\WidgetBlockByDate\Block\Widget\Type\DatePicker">
+                </block>
+            </parameter>
+            <parameter name="block_id" xsi:type="block" visible="true" required="true" sort_order="40">
+                <label translate="true">Block</label>
+                <block class="Magento\Cms\Block\Adminhtml\Block\Widget\Chooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Block...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="template" xsi:type="select" visible="true" required="true" sort_order="10">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default" value="widget/static_block/default.phtml" selected="true">
+                        <label translate="true">CMS Static Block Default Template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

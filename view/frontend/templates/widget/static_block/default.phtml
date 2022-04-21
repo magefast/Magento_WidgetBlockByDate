@@ -1,0 +1,12 @@
+<?php
+/**
+ * @author magefast@gmail.com www.magefast.com
+ */
+
+/* @var $block \Dragonfly\WidgetBlockByDate\Block\Widget\CmsBlockDate */
+?>
+<?php if ($block->getText()): ?>
+    <div class="widget block block-static-block">
+        <?= /* @noEscape */ $block->getText() ?>
+    </div>
+<?php endif; ?>
