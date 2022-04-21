@@ -1,7 +1,7 @@
 # Magento_WidgetBlockByDate
 Magento widget CMS block with Date range. 
 
-Can easy add date range for publicate the widget CMS block
+Can add date range for publicate the widget CMS block
 
 ![Settings](https://raw.githubusercontent.com/magefast/Magento_WidgetBlockByDate/main/README/pic1.png)
 
