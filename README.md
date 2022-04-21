@@ -1,4 +1,4 @@
-# Magento_WidgetBlockByDate
+# Dragonfly_WidgetBlockByDate
 Magento widget CMS block with Date range. 
 
 Can add date range for publicate the widget CMS block
